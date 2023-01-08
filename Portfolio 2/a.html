@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="">
+  <script src="https://kit.fontawesome.com/07f2e2cd60.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/07f2e2cd60.js" crossorigin="anonymous"></script>
+  <title>My Responsive Port Folio</title>
+  <link rel="stylesheet" href="ab.css">
+
+</head>
+<style>
+  * {
+
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+
+  }
+  header{
+    border-bottom: 1px solid white;
+}
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+    color: white;
+  }
+
+  nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 9px 20px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+
+  }
+
+  span {
+    color: #ad185e;
+  }
+
+  nav ul li:hover {
+    color: #961752ea;
+    transition: scale(.3s);
+    cursor: pointer;
+    border: 1px solid white;
+
+  }
+
+  nav h1 {
+    font-size: xx-large;
+
+  }
+
+  .btn {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    font-weight: bold;
+    padding: 1% 2%;
+    border-radius: 29px;
+    font-size: medium;
+  }
+
+  .btn:hover {
+    transform: scale(1);
+    background-color: transparent;
+    border: 2px solid #ad185e;
+    cursor: pointer;
+  }
+
+  .about {
+    padding: 15%;
+
+
+  }
+
+  .about h2 {
+    font-family: fangsong;
+    text-align: center;
+    font-size: xxx-large;
+
+
+
+  }
+  .about h2:hover{
+    -webkit-text-stroke: 1px rgb(240, 235, 235);
+    color: transparent;
+  }
+
+  .about h5 {
+    text-align: center;
+    font-size: x-large;
+  }
+
+  .about p {
+    text-align: center;
+    font-size: large;
+
+  }
+
+  .about button {
+    margin-left: 42%;
+    background-color: transparent;
+    text-decoration: none;
+    border: 3px solid white;
+    font-weight: bold;
+    padding: 1% 2%;
+    border-radius: 25px;
+    font-size: medium;
+}
+
+  
+
+  .about button:hover {
+    background-color: transparent;
+    border: 2px solid #ad185e;
+    cursor: pointer;
+  }
+
+  .ab {
+    font-size: xxx-large;
+    background-color: #191919;
+    text-align: center;
+    height: 12%;
+    padding: 2%;
+
+  }
+
+  .service {
+    text-align: center;
+    font-size: xxx-large;
+    background-color: #191919;
+    height: 5%;
+    padding: 2%;
+  }
+
+  .block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    background-color: #191919;
+  }
+
+  .b1 {
+
+    width: 46%;
+    padding: 3% 3%;
+    background: #191919;
+    border-radius: 7%;
+    margin: 2%;
+    overflow: hidden;
+    text-align: center;
+    border: 2px solid white;
+  }
+
+  .b2 {
+
+    width: 46%;
+    padding: 3% 3%;
+    background: #191919;
+    border-radius: 7%;
+    margin: 2%;
+    overflow: hidden;
+    text-align: center;
+    border: 2px solid white;  }
+
+  .b3 {
+    width: 46%;
+    padding: 3% 3%;
+    background: #191919;
+    border-radius: 7%;
+    margin: 2%;
+    overflow: hidden;
+    text-align: center;
+    border: 2px solid white;  }
+
+  .b4 {
+    width: 46%;
+    padding: 3% 3%;
+    background: #191919;
+    border-radius: 7%;
+    margin: 2%;
+    overflow: hidden;
+    text-align: center;
+    border: 2px solid white;  }
+
+  .block i {
+    color: #920a35;
+    height: 20px;
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    animation: icon 3s 1;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+    @keyframes icon {
+    0%{
+      
+      margin-bottom: 20px;
+    }
+    30%{
+      letter-spacing: 25px;
+      margin-bottom: 20px;
+    }
+    85%{
+      letter-spacing: 8px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .last h1 {
+    display: flex;
+    background-color: #191919;
+    justify-content: center;
+    height: 109px;
+    margin-top: 0%;
+
+  }
+
+  .social {
+    display: flex;
+
+  }
+
+  .social img {
+    width: 70px;
+    height: 67px;
+  }
+
+  .social a {
+    width: 70px;
+    height: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #191919;
+    border-radius: 50px;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+  }
+
+  footer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer p:nth-child(1) {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  .end {
+    position: absolute;
+
+    bottom: 35px;
+    font-size: 14px;
+
+  }
+
+  .form {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    padding: 4% 0%;
+    width: 14%;
+
+  }
+
+  .form input {
+    padding: 0;
+    margin: 10px 0px;
+    color: black;
+    height: 34px;
+    width: 200%;
+    font-size: larger;
+  }
+
+  .form textarea {
+    padding: 0;
+    margin: 10px 0px;
+    color: black;
+    height: 100px;
+    width: 200%;
+    font-size: larger;
+  }
+
+  .form h3 {
+    text-align: end;
+
+  }
+
+  .btnnn {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    font-weight: bold;
+    padding: 8% 20%;
+    display: flex;
+    margin: 0px 48%;
+    border-radius: 34px;
+  }
+
+  .btnnn:hover {
+    transform: scale();
+    background-color: transparent;
+    border: 2px solid #ad185e;
+    padding: 8% 20%;
+    
+    cursor: pointer;
+  }
+
+  .first {
+    text-align: center;
+    font-size: x-large;
+    padding-bottom: 1%;
+    background-color: #191919;
+    padding: 0% 1%;
+    padding-top: 1%;
+  }
+
+  .last {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    background-color: #191919;
+  }
+  .last h1{
+    height: 47px;
+  }
+  .next{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+  }
+  #slider{
+    overflow: hidden;
+  }
+  #slider figure{
+    position: relative;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+    animation-direction: alternate;
+    width: 500%;
+    
+  }
+#slider figure img{
+  float: left;
+  width: 20%;
+  
+}
+@keyframes slider{
+  0%{  left: 0%;}
+  20%{  left: 0%;}
+  25%{  left: -100%;}
+  45%{  left: -100%;}
+  50%{  left: -200%;}
+  70%{  left: -200%;}
+  75%{  left: -300%;}
+  95%{  left: -300%;} 
+
+
+}
+.video{
+
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: -1;
+  background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  
+}
+@media (aspect-ratio: 16/19 )
+{
+
+  .video{
+    
+    width: 100%;
+    height: auto
+  }
+}
+@media (aspect-ratio: 16/19 )
+{
+
+  .video{
+    width: auto;
+    height: 100%;
+  }
+}
+.btn1{
+  background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    font-weight: bold;
+    padding: 2% 2%;
+    border-radius: 29px;
+}
+.btn1:hover{
+    transform: scale(1);
+    background-color: transparent;
+    border: 2px solid #ad185e;
+    cursor: pointer;
+  }
+  
+</style>
+
+<body>
+  <div class="video">
+    <video autoplay loop muted plays-inline > 
+      <source src="video.mp4" ></video></div> 
+  <header>
+    <nav> 
+      <h1>Port<span>Folio</span></h1>
+      <ul>
+        <li>Home</li>
+        <li>About us</li>
+        <li>Skills</li>
+        <li>Contact us</li>
+      </ul>
+            
+        <button class="btn"><a href="https://www.youtube.com/@realmanidentity5681/videos"
+            target="_blank">Subscribe</button></a>           
+    </nav>
+  </header>
+
+  <div class="picture">
+    <section class="about">
+      <div class="container">
+        <h2 data-text="creative">TawaB MaLikx </h2>
+      </div>
+
+      <h5>Developer <span>& Designer</span></h5>
+     <div><p>My Name is Tawab <span>Malikx</span>.I Am a front-end <span> web Developer</span>. I can provide clean
+        code
+        pixel perfect design. I also make the website more and more interactive with web Animation. If you are
+        Intrested please contact me. </p>
+      </div>
+      <button><a
+          href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWrRlQzGfWgwRgxHkWcJpCQdvrxtrsQMSmPRSmvgNCpTNPTttTVGldZLxDbHDkTBjvqXxlHNQ"
+          target="_blank">Lets
+          Talk</button></a>
+    </section>
+  </div>
+  <div class="ab"> My <span>Famous Creativities</span> are
+  </div>
+  <div id="slider">
+      <figure><img src="new1.jpg" target="_blank" alt="pic">
+        <img src="new2.jpg" target="_blank" alt="pic">
+        <img src="new3.jpg" alt="pic">
+        <img src="new4.jpg" target="_blank" alt="pic">
+      </figure>
+     
+  </div>
+  <div class="service">Our Services </div>
+  <div class="block">
+    <div class="b1">
+      <i class="fa-solid fa-bars"></i>
+      <h3>Freelancing</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, quo vel? Obcaecati cupiditate laboriosam
+        eum modi velit distinctio.</p>
+      <button class="btn1">Readmore</button>
+    </div>
+    <div class="b2">
+      <i class="fa-solid fa-camera-retro"></i>
+      <h3>Developer</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, quo vel? Obcaecati cupiditate laboriosam
+        eum modi velit distinctio.</p>
+      <button class="btn1">Readmore</button>
+    </div>
+    <div class="b3">
+      <i class="fa-brands fa-github"></i>
+      <h3>Github</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, quo vel? Obcaecati cupiditate laboriosam
+        eum modi velit distinctio.</p>
+      <button class="btn1">Readmore</button>
+    </div>
+    <div class="b4">
+      <i class="fa-brands fa-linkedin"></i>
+      <h3>linkedin</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, quo vel? Obcaecati cupiditate laboriosam
+        eum modi velit distinctio.</p>
+      <button class="btn1">Readmore</button>
+    </div>
+  </div>
+  <div class="first">
+    <h1>Let Create a Beautiful website For You</h1>
+  </div>
+  <div class="last">
+
+    <div class="form">
+      <form action="connect.php" method="POST">
+        <h3>GET IN <span>TOUCH</span></h3>
+        <label for="Name">Name</label>
+        <input name="Name" type="text" id="name" placeholder="Enter Your Name" required>
+        <label for="Email">Email</label>
+        <input name="Email" type="email" id="email" placeholder="Your Email" required>
+        <label for="Phone">Phone</label>
+        <input name="Phone" type="text" id="phone" placeholder="Phone Number " required>
+        <label for="discription">Discription</label>
+        <textarea name="Message" id="message" rows="4" placeholder="How can we Help"></textarea>
+        <button type="submit" value="submit" class="btnnn">submit</button>
+      </form>
+
+    </div>
+    <div class="next">
+      <h1><span>Thanks</span></h1>
+      <h2>For Choosing us</h2>
+    </div>
+  </div>
+  <footer>
+    <p>Follow us</p>
+    <p>Tawab <span>Malik</span></p>
+    <div class="social">
+      <a href="https://www.facebook.com" target="_blank"><img src="icon1.png" alt=""></a>
+      <a href="https://twitter.com/realmanidentit1" target="_blank"><img src="icon4.png" alt=""></a>
+      <a href="https://wwww.whatsappp.com" target="_blank"><img src="icon3.png" alt=""></a>
+    </div>
+    <p class="end">All Right Reserved By <span>Tawab Malik</span> </p>
+  </footer>
+</body>
+
+
+</html>
